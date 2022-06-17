@@ -1,0 +1,116 @@
+.navbar {
+  padding: 1rem 0;
+  background-color: #ddd;
+  position: fixed;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.22s ease-in-out;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo a {
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #bbb;
+  transition: all 0.12s ease-in-out;
+}
+.navbar .logo a:hover {
+  background-color: var(--primary-color);
+  color: #000;
+}
+.navbar .nav-menu .hamburger {
+  display: none;
+}
+.navbar .nav-menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.navbar .nav-menu ul li a {
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid #aaa;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  transition: all 0.12s ease-in-out;
+}
+.navbar .nav-menu ul li a:hover,
+.navbar .nav-menu ul li a.active {
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  /* color: #000; */
+}
+.navbar .container > .hamburger {
+  width: 40px;
+  background-color: var(--primary-color);
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 1.5rem;
+  color: #000;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navbar .nav-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 14rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    transition: right 0.12s ease-in-out;
+    z-index: 3;
+  }
+  .navbar .nav-menu .hamburger {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #000;
+    position: absolute;
+    right: calc(7rem - 20px);
+    top: 1.25rem;
+    cursor: pointer;
+  }
+  .navbar .nav-menu ul {
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 0;
+  }
+  .navbar .nav-menu ul li {
+    width: 100%;
+    border-bottom: 1px solid #444;
+  }
+  .navbar .nav-menu ul li:first-child {
+    border-top: 1px solid #444;
+  }
+  .navbar .nav-menu ul li a {
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .navbar .container > .hamburger {
+    /* position: absolute; */
+    display: flex;
+    top: 1.25rem;
+    right: calc(7rem - 20px);
+    cursor: pointer;
+  }
+}

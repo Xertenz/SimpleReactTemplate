@@ -1,0 +1,18 @@
+.project-cards {
+  background-color: rgb(27, 37, 37);
+  color: #fff;
+  padding: 6rem 0;
+}
+.project-cards .title {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+}
+.project-cards .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}

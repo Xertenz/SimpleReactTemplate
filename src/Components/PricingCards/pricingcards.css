@@ -1,0 +1,66 @@
+.pricing {
+  background-color: rgb(25, 30, 30);
+  color: #fff;
+  padding: 6rem 0;
+}
+.pricing .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.pricing .cards .card {
+  border: 1px solid var(--primary-color);
+  text-align: center;
+  padding: 2rem 2rem;
+  font-size: 1.3rem;
+  width: 33.3333%;
+  transition: background-color 0.1s ease-in-out;
+}
+.pricing .cards .card:hover {
+  background-color: rgb(48, 48, 48);
+}
+
+.pricing .cards .card p,
+h2 {
+  margin-bottom: 1rem;
+}
+.pricing .cards .card .purchase {
+  background-color: var(--primary-color);
+  margin-top: 1.5rem;
+  color: rgb(25, 30, 30);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.13s ease-in-out;
+}
+.pricing .cards .card .purchase:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+@media (max-width: 991px) {
+  .pricing .cards {
+    flex-direction: column;
+  }
+  .pricing .cards .card {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .pricing .cards .card {
+    width: 90%;
+  }
+}
+@media (max-width: 414px) {
+  .pricing .cards .card {
+    padding: 2rem 1rem;
+  }
+  .pricing .cards .card .purchase {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+}

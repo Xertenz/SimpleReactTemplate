@@ -1,0 +1,68 @@
+.contact-form {
+  padding: 6rem 0;
+  background-color: rgb(66, 66, 66);
+  color: #fff;
+}
+
+.contact-form .form-wrapper {
+  width: 600px;
+  max-width: 100%;
+  margin: auto;
+  border: 3px solid rgb(34, 34, 34);
+  padding: 3rem 1.5rem;
+}
+
+.contact-form .form-wrapper form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-wrapper form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-wrapper form label {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-wrapper form input,
+.form-wrapper form textarea {
+  color: #fff;
+  font-size: 1.5rem;
+  outline: none;
+  background-color: rgb(34, 34, 34);
+  border: 2px solid var(--primary-color);
+}
+
+.form-wrapper form input {
+  padding: 0.5rem;
+}
+
+.form-wrapper form textarea {
+  text-indent: 2rem;
+  resize: none;
+  padding: 1rem;
+}
+
+.form-wrapper form .btn {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  border: 2px solid #fff;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.22s ease-in-out;
+  margin-top: 1rem;
+}
+.form-wrapper form .btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
